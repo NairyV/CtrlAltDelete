@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  min-height: 500px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #4a4a4a;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.form-container input {
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #bababa;
+  border-radius: 10px;
+  background-color: #dadada;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.form-container button,
+.form-container .btn-signup,
+.form-container .auth-button { /* Added .auth-button for the Login button */
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+  background-color: #353535;
+  color: #fff;
+  font-size: 1.2rem;
+  width: auto; /* Adjust if necessary to match the width on the other pages */
+  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the buttons block to fill the container */
+}
+
+.form-container button:hover,
+.form-container .btn-signup:hover {
+  background-color: #555;
+}
+
+.forgot-password {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #dbd5d5;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Separates the buttons */
+}
+
+/* If you want to stack the buttons vertically on smaller screens */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+  
+  .form-container button,
+  .form-container .btn-signup {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .form-container button:first-child,
+  .form-container .btn-signup:first-child {
+    margin-top: 0;
+  }
+}

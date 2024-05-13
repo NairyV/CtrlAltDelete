@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  min-height: 500px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.verification-form {
+  background-color: #4a4a4a;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verification-form h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.verification-form label {
+  align-self: flex-start;
+  margin-left: 2%;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.verification-form input {
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dadada;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.verification-form button {
+  padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    background-color: #353535;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.verification-form button:hover {
+  background-color: #555;
+}
+
+.error, .success {
+  width: 90%; /* Match input width */
+  padding: 1em;
+  border-radius: 0.5em;
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px; /* Center and add spacing */
+}
+
+.error {
+  background-color: #ffc2c2;
+}
+
+.success {
+  background-color: #3fda59;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  min-height: 500px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.signup-form-container {
+  background-color: #4a4a4a;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the start, affecting the labels */
+}
+
+.signup-form-container h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.signup-form-container input {
+  width: calc(100% - 40px); /* 100% width minus the total horizontal padding */
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dadada;
+  color: #333;
+  font-size: 1.2rem;
+  display: block; /* Ensures the input takes the full width available */
+}
+
+.signup-form-container label {
+  text-align: left;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%; /* Ensures label takes full width available */
+  padding-left: 5px; /* Aligns the text with the input fields */
+  display: block; /* Ensures the label takes the full width available */
+}
+
+.signup-form-container button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    background-color: #353535;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    align-self: center;
+  }
+
+.signup-form-container button:hover {
+  background-color: #555;
+}
+
+.signup-form-container .error {
+  color: #ff3860;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .signup-form-container {
+    width: 90%;
+  }
+
+  .signup-form-container button {
+    width: 100%;
+  }
+  
+}
